@@ -1,7 +1,6 @@
 import _ from 'lodash'
 import { createReducer } from '@reduxjs/toolkit';
 import { clearHome, loadHomeError, loadHomeSuccess } from '../actions/home';
-import { decryptedData } from '../../services/crypto';
 
 const initialState = {
     listing: <any>[],

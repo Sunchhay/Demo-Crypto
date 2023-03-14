@@ -1,7 +1,7 @@
 import { call, put, takeLatest } from "redux-saga/effects";
 import { getAuthorize } from "../../api/Authorize";
 import { getHome } from "../../api/Home";
-import { decryptData, decryptedData } from "../../services/crypto";
+import { decryptData } from "../../services/crypto/decryption.service";
 import { loadLoading, loadMore } from "../actions";
 import { loadHomeError, loadHomeSuccess, requestHome } from "../actions/home";
 
